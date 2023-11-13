@@ -14,4 +14,6 @@ function solve(num){
     }else{
         result = "out of bounds";
     }
+
+    console.log(result);
 }
