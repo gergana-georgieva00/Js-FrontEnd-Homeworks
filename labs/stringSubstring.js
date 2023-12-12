@@ -1,10 +1,21 @@
 function solve(word, text) {
-    const lowercasedWord = word.toLowerCase();
-    const lowercasedText = text.toLowerCase();
+    text = text.toLowerCase();
+    text = text.split();
 
-    if (lowercasedText.includes(lowercasedWord)) {
+    if (text.includes(word)) {
         console.log(word);
     } else {
         console.log(`${word} not found!`);
+    }
+}
+
+function stringSubstring(wordToSearch, textToProcess) {
+    textToProcess = textToProcess.toLowerCase()
+    textToProcess = textToProcess.split(' ')
+
+    if (textToProcess.includes(wordToSearch)) {
+        console.log(wordToSearch);
+    } else {
+        console.log(`${wordToSearch} not found!`)
     }
 }
