@@ -1,15 +1,8 @@
-function solve(){
-    function isPalindrome(num) {
-        const numStr = num.toString();
-        const reversedNumStr = numStr.split('').reverse().join('');
-        return numStr === reversedNumStr;
+function palindromeValidator(arrayOfIntegers) {
+    const arrayToString = arrayOfIntegers.map(String);
+
+    for (let string of arrayToString) {
+        if (string === string.split("").reverse().join("")) console.log("true");
+        else console.log("false");
     }
-    
-    function checkPalindromes(arr) {
-        for (let num of arr) {
-            const result = isPalindrome(num);
-            console.log(result ? "true" : "false");
-        }
-    }
-    
 }
